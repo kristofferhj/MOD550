@@ -4,13 +4,33 @@ Created on Wed Sep  2 12:20:21 2026
 
 @author: krist
 """
-from project_1_a.tools import info_lists
+from tools import describe_list, describe_dict
 
-list=[1,1,1,1,1]
-list1=[0,0,0,0]
 
-listi=(list,list1)
+my_lists = [
+    [1, 3, "mn"],
+    [5, "apple", 2.5],
+    ["hello", 4]
+]
 
-info = info_lists(listi)
+my_dicts = {
+    "fridge": {
+        "temperature": 4,
+        "milk": 2,
+        "eggs": 6
+    },
+    "freezer": {
+        "temperature": -18,
+        "pizza": 3,
+        "ice_cream": 2
+    }
+}
 
-print(info)
+
+print("LIST INFO")
+describe_list(my_lists)
+
+print()
+
+print("DICTIONARY INFO")
+describe_dict(my_dicts)
